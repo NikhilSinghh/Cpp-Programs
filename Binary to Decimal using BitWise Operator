@@ -1,0 +1,25 @@
+
+#include <iostream>
+#include<math.h>
+using namespace std;
+
+int main()
+{
+    cout<<"Binary to Decimal  \n Enter the Number ";
+    int n,i=0,ans=0,p=1;
+    cin>>n;
+    
+    while(n)
+    {
+        int rem= n%10;
+        ans=(rem*p)+ans;
+        p=p*2;
+        n=n/10;
+    }
+    
+    
+    cout<<ans;
+
+    return 0;
+}
+
